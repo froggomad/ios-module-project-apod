@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *checkItOutButton;
 
 @end
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _checkItOutButton.layer.cornerRadius = _checkItOutButton.frame.size.height / 2;
+}
+- (IBAction)checkItOutButtonTapped:(id)sender {
+    NSLog(@"%@", _checkItOutButton.currentTitle);
 }
 
 
