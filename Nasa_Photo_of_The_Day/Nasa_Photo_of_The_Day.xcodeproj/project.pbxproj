@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B96EFE83249C579E00CB60AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B991EF23249C27EA00411DF0 /* DetailViewController.swift */; };
+		B96EFE85249C58E100CB60AA /* SlideUpDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EFE84249C58E100CB60AA /* SlideUpDetailViewController.swift */; };
 		B991EED0249C06B700411DF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B991EECF249C06B700411DF0 /* ViewController.m */; };
 		B991EED3249C06B700411DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B991EED1249C06B700411DF0 /* Main.storyboard */; };
 		B991EED5249C06B900411DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B991EED4249C06B900411DF0 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9674B4F249C3EDE0099770E /* Nasa_Photo_of_The_Day-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nasa_Photo_of_The_Day-Bridging-Header.h"; sourceTree = "<group>"; };
+		B96EFE84249C58E100CB60AA /* SlideUpDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideUpDetailViewController.swift; sourceTree = "<group>"; };
 		B991EEC5249C06B700411DF0 /* Nasa_Photo_of_The_Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa_Photo_of_The_Day.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B991EECE249C06B700411DF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B991EECF249C06B700411DF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 		B991EEF3249C093800411DF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B991EEF4249C093800411DF0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		B991EEF5249C093800411DF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B991EF23249C27EA00411DF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				B991EEEF249C08A000411DF0 /* Resources */,
-				B991EECE249C06B700411DF0 /* ViewController.h */,
-				B991EECF249C06B700411DF0 /* ViewController.m */,
+				B991EF25249C27F300411DF0 /* View Controllers */,
 				B991EED1249C06B700411DF0 /* Main.storyboard */,
 				B991EED6249C06B900411DF0 /* LaunchScreen.storyboard */,
 			);
@@ -103,6 +107,7 @@
 		B991EEEF249C08A000411DF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9674B4F249C3EDE0099770E /* Nasa_Photo_of_The_Day-Bridging-Header.h */,
 				B991EEF5249C093800411DF0 /* AppDelegate.m */,
 				B991EEF3249C093800411DF0 /* main.m */,
 				B991EEF4249C093800411DF0 /* SceneDelegate.m */,
@@ -110,6 +115,17 @@
 				B991EED9249C06B900411DF0 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B991EF25249C27F300411DF0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B991EECE249C06B700411DF0 /* ViewController.h */,
+				B991EECF249C06B700411DF0 /* ViewController.m */,
+				B991EF23249C27EA00411DF0 /* DetailViewController.swift */,
+				B96EFE84249C58E100CB60AA /* SlideUpDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					B991EEC4249C06B700411DF0 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					B991EEDF249C06B900411DF0 = {
 						CreatedOnToolsVersion = 11.5;
@@ -212,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96EFE83249C579E00CB60AA /* DetailViewController.swift in Sources */,
 				B991EEF6249C093800411DF0 /* main.m in Sources */,
 				B991EEF7249C093800411DF0 /* SceneDelegate.m in Sources */,
+				B96EFE85249C58E100CB60AA /* SlideUpDetailViewController.swift in Sources */,
 				B991EEF8249C093800411DF0 /* AppDelegate.m in Sources */,
 				B991EED0249C06B700411DF0 /* ViewController.m in Sources */,
 			);
@@ -371,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
 				INFOPLIST_FILE = Nasa_Photo_of_The_Day/Resources/Info.plist;
@@ -380,6 +400,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hazystudios.Nasa-Photo-of-The-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nasa_Photo_of_The_Day/Resources/Nasa_Photo_of_The_Day-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -388,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
 				INFOPLIST_FILE = Nasa_Photo_of_The_Day/Resources/Info.plist;
@@ -397,6 +421,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hazystudios.Nasa-Photo-of-The-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nasa_Photo_of_The_Day/Resources/Nasa_Photo_of_The_Day-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -404,6 +430,7 @@
 		B991EEED249C06B900411DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;
@@ -424,6 +451,7 @@
 		B991EEEE249C06B900411DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34P4RF23ET;

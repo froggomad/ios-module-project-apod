@@ -15,10 +15,14 @@
 
 @implementation ViewController
 
+// MARK: - View Lifecycle -
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _checkItOutButton.layer.cornerRadius = _checkItOutButton.frame.size.height / 2;
 }
+
+// MARK: - Dev -
 - (IBAction)checkItOutButtonTapped:(id)sender {
     NSLog(@"%@", _checkItOutButton.currentTitle);
 }
