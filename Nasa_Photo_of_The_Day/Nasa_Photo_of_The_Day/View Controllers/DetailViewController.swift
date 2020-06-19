@@ -22,8 +22,6 @@ class DetailViewController: UIViewController {
 
     }
 
-
-
     func prepareBackgroundView(){
         let blurEffect = UIBlurEffect.init(style: .dark)
         let visualEffect = UIVisualEffectView.init(effect: blurEffect)
@@ -55,7 +53,7 @@ class DetailViewController: UIViewController {
         let height = view.frame.height
         let width  = view.frame.width
         bottomSheetVC.view.frame = CGRect(x: 0, y: self.view.frame.maxY, width: width, height: height)
-        bottomSheetVC.view.backgroundColor = .blue
+        
     }
 
 }
